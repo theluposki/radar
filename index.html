@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar</title>
+</head>
+<body>
+    <div id="app">
+        <h1 class="title">RADAR</h1>
+
+        <div class="data">
+            <h1>{{ dataLocation.id }}</h1>
+            <p><b>Seu IP:</b>&nbsp;{{ dataLocation.ip }}</p>
+            <p><b>Sua Localização:</b>&nbsp; {{ dataLocation.location }}</p>
+            <p><b>Seu dispositivo:</b>&nbsp; {{ dataLocation.deviceType }}</p>
+        </div>
+
+        <div id="map"></div>
+
+    </div>
+
+    <script src="https://js.radar.com/v3/radar.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin="same-origin"></script>
+    <script src="assets/app.js" type="module"></script>
+</body>
+</html>

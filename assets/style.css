@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Rubik+80s+Fade&display=swap');
+
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #f4f4f4;
+    --dark: #212121;
+    --silver: #d5d5d5;
+
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    color: var(--white);
+    font-size: 16px;
+
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+}
+#map { 
+    background-color: var(--white);
+    height: 620px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Rubik 80s Fade', cursive;
+    font-weight: 400;
+    letter-spacing: 13px;
+    font-size: 4rem;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 400;
+
+    padding: 40px;
+}
+
+.data h1 {
+    opacity: .7;
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 480px) {
+    #map {
+        height: 500px;
+    }
+}
