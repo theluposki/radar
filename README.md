@@ -1,2 +1,5 @@
 # Radar
-[Radar](https://theluposki.github.io/radar/)
+
+=> [Radar](https://theluposki.github.io/radar/)
+
+Developed by theluposki
